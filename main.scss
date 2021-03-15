@@ -1,0 +1,63 @@
+@import "scss/variables";
+
+body {flex-direction: column;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mobile-only {display: none !important;}
+.page-wrap {
+  flex-grow: 0.95;
+  display: flex;
+}
+.page {
+  position: relative;
+  background: white;
+  border: 1px solid;
+  transition: width 1s;
+  padding: 1em;
+  height: 100%;
+  width: 50vw;
+
+  &:target {
+    width: 100vw;
+    .page__expand {display: none;}
+    .page__compress {display: block;}
+  }
+
+  &__title {
+    text-decoration: underline;    
+  }
+
+  &__expand,
+  &__compress {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+  &__compress {display: none;}
+  
+  &--skinny {
+    width: 25vw;
+  }
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+
+  &__item {
+    display: block;
+    flex-grow: 1;
+  }
+}
+.button-nav {
+  display: none;
+}

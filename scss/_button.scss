@@ -1,0 +1,19 @@
+@mixin button($size) {
+  display: block;
+  text-align: center;
+  width: $size;
+  height: $size;
+  border-radius: 2em;
+  border: 2px solid;
+  box-shadow: 0 0 8em;
+  transition: transform 1s, border-color 500ms;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: translateY(-$size/4);
+  }
+  &:focus {
+    border-color: red;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCT HOMEPAGE</title>
+    <script
+      src="https://kit.fontawesome.com/81f778ea63.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/initial.css" />
+    <link rel="stylesheet" href="css/main.css" media="(min-width: 1000px)" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1000px)" />
+  </head>
+  <body>
+    <a href="#nav" class="button-nav"><i class="fas fa-bars"></i></a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list mobile-only">
+        <li class="nav__item"><a href="#following">FOLLOWING</a></li>
+        <li class="nav__item"><a href="#discover">DISCOVER</a></li>
+        <li class="nav__item"><a href="#feed">YOUR FEED</a></li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__item"><i class="fas fa-home"></i></li>
+        <li class="nav__item"><i class="fas fa-plus"></i></li>
+        <li class="nav__item"><i class="fas fa-user"></i></li>
+      </ul>
+    </nav>
+
+    <div class="page-wrap">
+      <div class="page page--skinny" id="following">
+        <h1 class="page__title">Following</h1>
+        <a class="page__expand" href="#following"
+          ><i class="fas fa-expand-alt"></i
+        ></a>
+        <a href="#" class="page__compress"
+          ><i class="fas fa-compress-alt"></i
+        ></a>
+      </div>
+      <div class="page page--skinny" id="discover">
+        <h1 class="page__title">Discover</h1>
+        <a class="page__expand" href="#discover"
+          ><i class="fas fa-expand-alt"></i
+        ></a>
+        <a href="#" class="page__compress"
+          ><i class="fas fa-compress-alt"></i
+        ></a>
+      </div>
+      <div class="page page--wide" id="feed">
+        <h1 class="page__title">Your Feed</h1>
+        <a class="page__expand" href="#feed"
+          ><i class="fas fa-expand-alt"></i
+        ></a>
+        <a href="#" class="page__compress"
+          ><i class="fas fa-compress-alt"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import "scss/button";
+@import "scss/variables";
+
+.page-wrap {flex-direction: row;}
+
+.page {
+  padding: 1em;
+  flex-grow: none;
+  width: 100vw;
+  height: 100vh;
+  &__expand, &__compress {display: none}
+}
+.button-nav {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 500;
+  @include button(5em);
+}
+.nav {
+  display: none;
+  position: fixed;
+  background: $bg-secondary;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  box-shadow: -1em 0 10em black;
+
+  &:target {
+    display: block;
+  }
+
+  &__list {
+    display: block;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 5em;
+  }
+}
